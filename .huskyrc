@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "commit-msg": [
+      "commitlint -E HUSKY_GIT_PARAMS"
+    ],
+    "pre-commit": [
+      "yarn precommit"
+    ],
+    "pre-push": [
+      "yarn prepush"
+    ]
+  }
+}

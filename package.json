@@ -1,0 +1,36 @@
+{
+  "name": "@logicalhq/stylelint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:logicalhq/stylelint-config.git",
+  "license": "MIT",
+  "scripts": {
+    "fmt": "prettier --write \"./**/*.{js,json,md}\"",
+    "fmt:check": "prettier --list-different \"./**/*.{js,json,md}\"",
+    "lint": "eslint . --ext .js",
+    "lint:fix": "yarn lint --fix",
+    "lint:spelling": "cspell --config=.cspell.json \"**/*.{md,js}\"",
+    "precommit": "yarn lint-staged",
+    "prepush": "yarn fmt:check",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@logicalhq/commitlint-config": "^1.0.2",
+    "@logicalhq/eslint-config-base": "^1.0.2",
+    "commitlint": "^8.3.5",
+    "eslint": "^7.1.0",
+    "eslint-plugin-import": "^2.21.2",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.7",
+    "prettier": "^2.0.5",
+    "stylelint": "^13.5.0",
+    "stylelint-order": "^4.0.0",
+    "stylelint-scss": "^3.17.2"
+  },
+  "peerDependencies": {
+    "stylelint-order": ">=4.0.0",
+    "stylelint-scss": ">=3.17.2"
+  }
+}

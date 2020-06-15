@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Disallows an empty line before closing blocks 1`] = `
+"
+a {
+  color: black;
+}
+"
+`;
+
+exports[`Does not accept non-lowercase at-rules 1`] = `
+"
+@media (min-width: 50em) {}
+"
+`;
+
+exports[`Requires a newline after an opening brace only in a single-line context 1`] = `
+"
+a {
+  color: pink;
+}
+"
+`;
+
+exports[`Requires a newline after the semicolon of an at-rule 1`] = `
+"
+@import url(\\"x.css\\");
+a {}
+"
+`;
+
+exports[`Requires a newline before a closing brace only in a multi-line context 1`] = `
+"
+a {
+  color: pink;
+}
+"
+`;
+
+exports[`Requires a single space after at-rule names in single-line blocks 1`] = `
+"
+@media (min-width: 50em) {}
+"
+`;
+
+exports[`Requires a space after a closing brace only in a single-line context 1`] = `
+"
+a { color: pink; }
+"
+`;
+
+exports[`Requires a space before a closing brace only in a single-line context 1`] = `
+"
+a { color: pink; }
+"
+`;
+
+exports[`Requires a space before a closing brace only in a single-line context 2`] = `
+"
+a { color: pink; }
+"
+`;
+
+exports[`Requires an empty line before a comment 1`] = `
+"
+a {}
+
+/* comment */
+"
+`;
+
+exports[`Requires an empty line before custom properties 1`] = `
+"
+a {
+  --foo: pink;
+  --bar: red;
+
+  top: 10px;
+}
+"
+`;
+
+exports[`Requires color to be lower-case 1`] = `
+"
+$color: #fff;
+"
+`;
+
+exports[`Requires color to be short 1`] = `
+"
+$color: #fff;
+"
+`;
+
+exports[`Requires whitespaces before and after the comment 1`] = `
+"
+/* comment */
+"
+`;

@@ -34,6 +34,7 @@
     "stylelint-scss": ">=3.17.2"
   },
   "resolutions": {
+    "**/lodash": "^4.17.19",
     "**/dot-prop": "^5.2.0"
   }
 }

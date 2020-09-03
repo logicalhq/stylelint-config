@@ -18,20 +18,20 @@
   "devDependencies": {
     "@logicalhq/commitlint-config": "^1.0.2",
     "@logicalhq/eslint-config-base": "^1.0.2",
-    "commitlint": "^8.3.5",
-    "eslint": "^7.1.0",
-    "eslint-plugin-import": "^2.21.2",
+    "commitlint": "^9.1.2",
+    "eslint": "^7.8.1",
+    "eslint-plugin-import": "^2.22.0",
     "husky": "^4.2.5",
-    "jest": "^26.0.1",
-    "lint-staged": "^10.2.7",
-    "prettier": "^2.0.5",
-    "stylelint": "^13.5.0",
+    "jest": "^26.4.2",
+    "lint-staged": "^10.3.0",
+    "prettier": "^2.1.1",
+    "stylelint": "^13.7.0",
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.17.2"
   },
   "peerDependencies": {
-    "stylelint-order": ">=4.0.0",
-    "stylelint-scss": ">=3.17.2"
+    "stylelint-order": ">=4.1.0",
+    "stylelint-scss": ">=3.18.0"
   },
   "resolutions": {
     "**/lodash": "^4.17.19",
